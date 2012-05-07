@@ -26,22 +26,18 @@ public class RotationMovements {
                 switch(keyCode) {
                     case KeyEvent.VK_LEFT: 
                         turtle.setHeading(-90);
-                        //turtle.setX((turtle.getX()-step));
                         turtle.forward(step);
                         break;
                     case KeyEvent.VK_RIGHT:
                         turtle.setHeading(90);
-                        //turtle.setX((turtle.getX()+step));
                         turtle.forward(step);
                         break;
                     case KeyEvent.VK_UP:
                         turtle.setHeading(0);
-                        //turtle.setY((turtle.getY()+step));
                         turtle.forward(step);
                         break;
                     case KeyEvent.VK_DOWN:
                         turtle.setHeading(180);
-                        //turtle.setY((turtle.getY()-step));
                         turtle.forward(step);
                         break;
                 }

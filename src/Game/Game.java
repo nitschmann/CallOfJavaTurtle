@@ -10,6 +10,8 @@ import ch.aplu.turtle.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.Color;
+//Internal imports:
+import Game.Actions.*;
 import Game.Movements.*; 
 
 public class Game {
@@ -22,6 +24,7 @@ public class Game {
         this.t.setPos(0, 0);
         this.t.speed(100);
         Movements m = new Movements();
+        Shots shot = new Shots(this.t);
         m.makeFigureMovable(this.t);
     }
     
