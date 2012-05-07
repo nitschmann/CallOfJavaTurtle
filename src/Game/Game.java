@@ -18,25 +18,11 @@ public class Game {
     private Turtle t;
     //Constructor
     public Game() {
-        /*GameBackground background = new GameBackground(1000, 880);
-        background.setWindowTitle("Call of Java Turtle");
-        background.setBackgroundColor(Color.red);*/
         this.t = new Turtle();
         this.t.setPos(0, 0);
+        this.t.speed(100);
         Movements m = new Movements();
         m.makeFigureMovable(this.t);
-        //this.tFrame.setResizable(false);
-        /*this.t = new Turtle(this.tFrame);
-        //MouseAdapter
-        this.t.addMouseListener(new MouseAdapter() {
-           public void mousePressed(MouseEvent e) {
-               t.setScreenPos(e.getPoint());
-           }
-        });
-        //Events:
-        this.t.beep();
-        //this.tFrame.setBackground(Color.yellow);
-        */
     }
     
     public static void main(String[] args) {

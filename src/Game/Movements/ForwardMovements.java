@@ -22,11 +22,12 @@ public class ForwardMovements {
                 public void keyPressed(KeyEvent evt) {
                     int step = 10; 
                     int keyCode = evt.getKeyCode();
+                    turtle.penUp();
                     //Check if any arrow-key is pressed 
                     switch(keyCode) {
                         case KeyEvent.VK_UP:
                             turtle.setHeading(0);
-                            turtle.setY((turtle.getY()+step));
+                            turtle.forward(step);
                             break;
                     }
                 }
