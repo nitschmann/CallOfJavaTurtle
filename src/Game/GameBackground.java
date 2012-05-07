@@ -19,6 +19,12 @@ public class GameBackground {
         this.background.setResizable(true);
         
     }
+    
+    //Set the color for the game background
+    public void setBackgroundColor(Color color) {
+        this.background.setBackground(color);
+    }
+    
     //Set the title of the window 
     public void setWindowTitle(String title) {
         this.background.setTitle(title);

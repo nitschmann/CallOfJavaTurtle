@@ -9,7 +9,8 @@ package Game;
 import ch.aplu.turtle.*;
 import java.awt.*;
 import java.awt.event.*;
-
+import java.awt.Color;
+import Game.Movements.*; 
 
 public class Game {
     
@@ -17,9 +18,13 @@ public class Game {
     private Turtle t;
     //Constructor
     public Game() {
-        GameBackground background = new GameBackground(1000, 880);
+        /*GameBackground background = new GameBackground(1000, 880);
         background.setWindowTitle("Call of Java Turtle");
-        this.t = new Turtle(background.background);
+        background.setBackgroundColor(Color.red);*/
+        this.t = new Turtle();
+        this.t.setPos(0, 0);
+        Movements m = new Movements();
+        m.makeFigureMovable(this.t);
         //this.tFrame.setResizable(false);
         /*this.t = new Turtle(this.tFrame);
         //MouseAdapter
